@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import profilePic from './assets/sharath.png'; 
-import aboutPic from './assets/profile1.png'; 
 
 function App() {
   return (
@@ -34,20 +32,22 @@ function App() {
               I am an Artificial Intelligence and Machine Learning student interested in AI, ML, Deep Learning, 
               and full-stack development. I build practical projects that connect intelligent models with real-world web applications.
             </p>
+
             <div className="hero-buttons">
               <a href="#projects" className="btn-primary">Explore My Projects →</a>
               <a href="/finalresume.pdf" target="_blank" rel="noreferrer" className="btn-secondary">View Resume 📄</a>
             </div>
+
             <div className="social-icons">
               <a href="https://github.com/sharath900" target="_blank" rel="noreferrer" className="icon-circle">GH</a>
               <a href="https://www.linkedin.com/in/sharath-kumar-632b813a7/" target="_blank" rel="noreferrer" className="icon-circle">LN</a>
               <a href="mailto:dhanu13435@gmail.com" className="icon-circle">✉</a>
             </div>
           </div>
-          
+
           <div className="hero-image-container animate-zoom-in">
             <div className="profile-circle">
-              <img src={profilePic} alt="Meedidoddi Sharath Kumar" />
+              <img src="/sharath.png" alt="Meedidoddi Sharath Kumar" />
             </div>
           </div>
         </div>
@@ -58,10 +58,10 @@ function App() {
         <div className="container">
           <p className="section-subtitle-tag">Introduction</p>
           <h2 className="section-title">About Me</h2>
-          
+
           <div className="about-grid-layout">
             <div className="about-avatar-card interactive-hover">
-              <img src={aboutPic} alt="Sharath Avatar Illustration" className="about-full-img" />
+              <img src="/profile1.png" alt="Sharath Avatar Illustration" className="about-full-img" />
             </div>
 
             <div className="about-description-box">
@@ -75,6 +75,7 @@ function App() {
                 I am currently building projects such as AI interview preparation systems, student learning assistants, 
                 resume analyzers, and intelligent AI platforms. My goal is to become a strong AI engineer with practical project experience.
               </p>
+
               <div className="about-tag-pills">
                 <span className="pill-tag">🧠 AI & ML Enthusiast</span>
                 <span className="pill-tag">&lt;/&gt; Python Developer</span>
@@ -90,14 +91,14 @@ function App() {
         <div className="container">
           <p className="section-subtitle-tag text-center">Skills</p>
           <h2 className="section-title text-center">Technologies I Work With</h2>
-          
+
           <div className="skills-matrix-grid">
             <div className="skill-item-card interactive-hover">
               <div className="skill-card-icon-wrapper">🐍</div>
               <h4>Python</h4>
               <p>Programming, logic building, automation, backend development, and AI/ML implementation.</p>
             </div>
-            
+
             <div className="skill-item-card interactive-hover">
               <div className="skill-card-icon-wrapper">🧠</div>
               <h4>Machine Learning</h4>
@@ -131,122 +132,86 @@ function App() {
         </div>
       </section>
 
-      {/* 5. Featured Projects Section */}
+      {/* 5. Projects Section */}
       <section id="projects" className="section-padding">
         <div className="container">
           <p className="section-subtitle-tag text-center">Projects</p>
           <h2 className="section-title text-center">Featured Projects</h2>
-          
+
           <div className="featured-projects-column-grid">
+
             <div className="featured-project-box-card interactive-hover">
               <div className="project-card-header-icon">👤</div>
               <h4>AI Interview Mirror</h4>
-              <p>An AI-based interview preparation platform that helps students practice interviews, analyze resumes, and improve job readiness through smart feedback.</p>
-              <div className="tech-stack-row-tags">
-                <span className="tech-badge">Django</span>
-                <span className="tech-badge">Python</span>
-                <span className="tech-badge">Gemini AI</span>
-                <span className="tech-badge">Bootstrap</span>
-                <span className="tech-badge">Render</span>
-              </div>
+              <p>An AI-based interview preparation platform...</p>
               <div className="project-action-links">
-                <a href="https://github.com/sharath900/ai-interview-mirror.git" target="_blank" rel="noreferrer" className="action-link-item">GitHub 🔗</a>
-                <a href="https://ai-interview-mirror.onrender.com/" target="_blank" rel="noreferrer" className="action-link-item">Live Demo ↗</a>
+                <a href="https://github.com/sharath900/ai-interview-mirror.git" target="_blank" rel="noreferrer">GitHub 🔗</a>
+                <a href="https://ai-interview-mirror.onrender.com/" target="_blank" rel="noreferrer">Live Demo ↗</a>
               </div>
             </div>
 
             <div className="featured-project-box-card interactive-hover">
               <div className="project-card-header-icon">🎓</div>
               <h4>StudyMate AI</h4>
-              <p>A RAG-based student learning assistant that allows users to ask questions from uploaded notes and get useful answers. It helps students understand study material faster using AI-powered responses.</p>
-              <div className="tech-stack-row-tags">
-                <span className="tech-badge">Flask</span>
-                <span className="tech-badge">Python</span>
-                <span className="tech-badge">RAG</span>
-                <span className="tech-badge">AI</span>
-                <span className="tech-badge">LLM</span>
-              </div>
+              <p>RAG-based learning assistant...</p>
               <div className="project-action-links">
-                <a href="https://github.com/sharath900/studymate-ai-rag-chatbot.git" target="_blank" rel="noreferrer" className="action-link-item">GitHub 🔗</a>
-                <a href="https://studymate-ai-rag-chatbot.onrender.com/" target="_blank" rel="noreferrer" className="action-link-item">Live Demo ↗</a>
+                <a href="https://github.com/sharath900/studymate-ai-rag-chatbot.git" target="_blank" rel="noreferrer">GitHub 🔗</a>
+                <a href="https://studymate-ai-rag-chatbot.onrender.com/" target="_blank" rel="noreferrer">Live Demo ↗</a>
               </div>
             </div>
 
             <div className="featured-project-box-card interactive-hover">
               <div className="project-card-header-icon">📰</div>
               <h4>Context Pulse AI</h4>
-              <p>An AI-powered live news summarization platform that fetches trending news, performs sentiment analysis, and generates concise AI summaries using LLMs. The platform helps users quickly understand current events with intelligent insights.</p>
-              <div className="tech-stack-row-tags">
-                <span className="tech-badge">Django</span>
-                <span className="tech-badge">Python</span>
-                <span className="tech-badge">LLM</span>
-                <span className="tech-badge">Sentiment Analysis</span>
-                <span className="tech-badge">News API</span>
-              </div>
+              <p>AI-powered news summarization...</p>
               <div className="project-action-links">
-                <a href="https://github.com/sharath900/context-pulse-ai.git" target="_blank" rel="noreferrer" className="action-link-item">GitHub 🔗</a>
-                <a href="https://context-pulse-ai.onrender.com/" target="_blank" rel="noreferrer" className="action-link-item">Live Demo ↗</a>
+                <a href="https://github.com/sharath900/context-pulse-ai.git" target="_blank" rel="noreferrer">GitHub 🔗</a>
+                <a href="https://context-pulse-ai.onrender.com/" target="_blank" rel="noreferrer">Live Demo ↗</a>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* 6. Certifications Section */}
+      {/* 6. Certifications */}
       <section id="certifications" className="section-padding dark-bg">
         <div className="container">
-          <p className="section-subtitle-tag text-center">Certifications</p>
-          <h2 className="section-title text-center">Certifications & Learning</h2>
-          
+          <h2 className="section-title text-center">Certifications</h2>
+
           <div className="featured-projects-column-grid">
-            <div className="featured-project-box-card interactive-hover">
-              <div className="project-card-header-icon">🐍</div>
+
+            <div className="featured-project-box-card">
               <h4>Python Certification</h4>
-              <p className="cert-issuer-text">Kaggle</p>
-              <p>Completed Python certification covering programming fundamentals, functions, problem-solving, and coding practice useful for AI and ML projects.</p>
-              <a href="/python.png" target="_blank" rel="noreferrer" className="cert-link-btn">View Certificate ↗</a>
+              <a href="/python.png" target="_blank" rel="noreferrer">View Certificate</a>
             </div>
 
-            <div className="featured-project-box-card interactive-hover">
-              <div className="project-card-header-icon">🤖</div>
-              <h4>Artificial Intelligence Certification</h4>
-              <p className="cert-issuer-text">Infosys Springboard</p>
-              <p>Learned AI fundamentals, intelligent systems, real-world AI use cases, and how AI can be applied in modern software applications.</p>
-              <a href="/artificialintellegence.pdf" target="_blank" rel="noreferrer" className="cert-link-btn">View Certificate ↗</a>
+            <div className="featured-project-box-card">
+              <h4>AI Certification</h4>
+              <a href="/artificialintellegence.pdf" target="_blank" rel="noreferrer">View Certificate</a>
             </div>
 
-            <div className="featured-project-box-card interactive-hover">
-              <div className="project-card-header-icon">🧠</div>
+            <div className="featured-project-box-card">
               <h4>Deep Learning Certification</h4>
-              <p className="cert-issuer-text">Infosys Springboard</p>
-              <p>Studied neural networks, CNNs, RNNs, deep learning workflows, and practical applications of deep learning in real-world problems.</p>
-              <a href="/deeplearning.pdf" target="_blank" rel="noreferrer" className="cert-link-btn">View Certificate ↗</a>
+              <a href="/deeplearning.pdf" target="_blank" rel="noreferrer">View Certificate</a>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* 7. Contact Section */}
+      {/* 7. Contact */}
       <section id="contact" className="section-padding text-center">
         <div className="container">
-          <div className="contact-glass-panel-box interactive-hover">
-            <p className="section-subtitle-tag">Contact</p>
-            <h2>Let's connect and build something useful.</h2>
-            <p className="contact-desc-text">
-              I am open to internships, project collaborations, and learning opportunities in Python, AI, Machine Learning, Deep Learning, Flask, and Django.
-            </p>
-            <div className="contact-action-row-buttons">
-              <a href="mailto:dhanu13435@gmail.com" className="contact-btn-solid">Email Me ✉</a>
-              <a href="https://github.com/sharath900" target="_blank" rel="noreferrer" className="contact-btn-outline">GitHub 🐙</a>
-              <a href="https://www.linkedin.com/in/sharath-kumar-632b813a7/" target="_blank" rel="noreferrer" className="contact-btn-outline">LinkedIn 👔</a>
-            </div>
-          </div>
+          <h2>Let's connect</h2>
+
+          <a href="mailto:dhanu13435@gmail.com">Email Me</a>
         </div>
       </section>
 
-      {/* 8. Footer */}
+      {/* Footer */}
       <footer className="main-footer">
-        <p>© {new Date().getFullYear()} Meedidoddi Sharath Kumar. Powered by React & Vite.</p>
+        <p>© {new Date().getFullYear()} Sharath Kumar</p>
       </footer>
     </div>
   );
